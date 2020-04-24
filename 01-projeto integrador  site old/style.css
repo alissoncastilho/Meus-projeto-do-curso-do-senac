@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icons a{
+    color: white;
+    padding: 0 0.75em;
+}
+#menu .nav-item a{
+    padding: 1em;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+
+/* Formulário */
+
+#form p{
+    line-height: 200%;
+    background: #35619e;
+}
+.campo{
+    width: 300px;
+    margin: 10px ;
+    padding:3px;
+    background-color: #f8f8f8;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+}
+.combo{
+    width: 60px;
+}
+.botao{
+    border-style: none;
+    background-color: #e44e4ef3;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.botao:hover{
+    background-color: #e8eb16bc;
+}
+.teste{
+    background-color: #7b7b8363;
+
+}
+.voltar{
+	width: 35px;
+	height: 30px;
+	display:none;
+	right:20px;
+	background: rgba(253, 207, 2, 0.89);
+	border-radius: 0; 
+	position: fixed;
+	bottom:5px;
+}
+.voltar i {
+	color:rgba(233, 13, 13, 0.685);
+	font-size: 2em;
+	margin-left:12%;
+	margin-top:0;  
+ }
+
+
+
+
+
+
+
+
+/* Faq */
+
+.faq input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tabs{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px -2px rgb(0, 0, 0,.5);
+}
+.tab{
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+.tab-label{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: rgb(230, 40, 40);
+    font-weight: bold;
+    cursor: pointer;              /*Mostrar a mão de link*/
+    border-bottom: 1px solid #fff;
+}
+.tab-label:hover{
+    background: rgb(248, 212, 5);
+}
+.tab-label::after{
+    content: "\002B"; /*sinal de mais*/
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all .5s;
+}
+.tab-content{
+    max-height: 0;
+    padding: 0 1em;
+    color: #000;
+    background: #fff;
+    transition: all .5s;
+}
+input:checked + .tab-label:after{
+    content: "\2212";
+}
+input:checked ~ .tab-content{
+    max-height: 100vh;
+    padding: 1em;
+}
+.close{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    background: rgb(207, 6, 6);
+}
+.close:hover{
+    background: #e4cf13;
+    border-radius: 5px;
+}
+.faq label{
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+}
+
