@@ -1,0 +1,442 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* font-size: 20px; */
+    font-family: 'Arial', 'Helvetica', 'Verdana', 'sans-serif';
+    background-image: url(imagens/fundoTopo.jpg), url(imagens/fundoRodape1.png);
+    background-repeat: repeat-x, repeat-x;        /*repeat, repeat-x, repeat-y, no-repeat*/
+    background-position: left top, left bottom;
+}   
+
+.centro{
+    text-align: center;
+}
+.centro a{
+    text-decoration: none;
+    color: #000;
+}
+.centro a:hover{
+    color: #aaa;
+}
+
+
+header{
+    width: 1000px;                      /*largura do site*/
+    margin: 0 auto 0 auto;              /*centralizar*/
+    height: 180px;                      /*altura*/
+    display: flex;                      /*colocar lado-a-lado*/                        
+    justify-content: space-between;      /*espaçamento entre...*/
+    align-items: center;    
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;  
+}
+
+.Redessociais{
+  font-size: 2em;  
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);                       /*colocar uma cor de background transparente*/
+  padding: 10px 20px;                                               /*margem dentro da caixa*/
+  border-radius: 5px;                                               /*raio nas de DIV caixas*/    
+}
+
+.fa-facebook-square{
+    color: #35619e;
+}
+
+.fa-twitter-square{
+    color: #00b6f3;
+}
+
+.fa-youtube-square{
+    color: #aa2a25;
+}
+
+.fa-instagram{
+    color: #D900FF;
+}
+
+.fa-instagram:hover{
+    color: #F542FF;
+}
+
+.fa-twitter-square:hover{
+    color: #4DDDFF;
+}
+
+.fa-youtube-square:hover{
+    color: #FF1814;
+}
+
+.fa-facebook-square:hover{
+    color: #0F33FF;
+}
+
+nav{
+background-color: #aaa;
+display: flex;
+justify-content: center;
+
+}
+
+nav > a{
+    color: #fff;
+    text-decoration: none;                /*Tirar sublinhado*/
+    background-color: #9c9797;
+    display: block;                       /*mudar para bloco*/
+    margin-right: 1px;
+    padding: 10px 24px 10px 24px;
+ }
+
+nav > a:hover{
+    background-color: #777;
+    border-radius: 10px;
+}
+
+section{
+    display: grid;                                                          /*Define o Layout como grid*/
+    grid-template-areas: "conteudo lateral" "rodape rodape";                /*Quantas colunas para trabalhar*/
+    grid-template-columns: 700px 300px;
+    justify-content: center;
+}
+
+aside{
+    grid-area: lateral;
+    background-color: #aaa;
+    margin: 30px 0px;
+    padding: 20px;
+}
+
+aside > p{
+    margin: 10px 0px;
+}
+
+footer{
+    grid-area: rodape;   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+    align-items: center;  
+    height: 100px;
+    background-color: #aaa;
+    font-size: 0.8em;    
+}
+
+/* Formatação do article*/
+
+article{
+    grid-area: conteudo;                                    /*usando o Grid-template-areas como base*/
+    padding: 30px 30px 30px 0px;
+
+}
+
+article > h1{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+article > h2{                   /*Não flutuar*/
+    clear: both;
+}
+
+article > ul{
+    padding-left: 20px;
+    margin: 15px 0px;
+}
+
+article > li{
+    margin: 5px 0px;
+}
+
+article > p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 120%;
+    margin: 20px 0px;
+}
+
+article > span{
+    background-color: rgba(192, 233, 10, 0.877);
+}
+
+.fotoE{
+    margin: 0px 15px 10px 0px;
+    float: left;
+
+}
+
+.fotoD{
+    margin: 0px 15px 0px 15px; 
+    float: right;
+}
+
+/* Tabela Serviços */
+
+.tabela1{
+    width: 100%;
+    /* border-collapse: collapse; */    /*tirar o espaçamento entre colunas*/
+    border-collapse: separete;          /*colocar o espaçamento entre colunas*/
+    background-color: #aaa;
+}
+.tabela1 td{
+    background-color: #fff;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+/* Tabela Administração */
+
+.tabela2{
+    width: 100%;
+    border-collapse: collapse;            
+}
+.tabela2 th{
+    padding: 10px;
+    background-color: #777; 
+    color: #fff;
+}
+.tabela2 td{
+    padding: 10px;
+    text-align: center;
+}
+.tabela2 tr:nth-child(odd){        /* odd = ímpar, even = par */
+    background-color: #e1e1e1;
+}
+
+/* Formulário */
+
+label{
+    width: 100px;
+    float: left;
+    font-size: 18px;
+} 
+#form1 p{
+    line-height: 200%;
+}
+.campo{
+    width: 400px;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.combo{
+    width: 411px;
+}
+.botao{
+    border-style: none;
+    background-color: #267bbb;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.botao:hover{
+    background-color: #35619e;
+}
+
+/* Banner página home */ 
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.itens .bx-wrapper{
+    border: none;
+}
+.bxslider li img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Página Home */
+
+.index{
+    width: 1000px;
+    margin: 0px auto;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Sempre que usar wrap, definir a largura do 
+    elemento filho, como mostrado abaixo */
+}
+.home div{
+    width: 30%;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.home i{
+    font-size: 50px;
+    color: #267bbb;
+}
+.home h3{
+    font-size: 26px;
+}
+.home p{
+    line-height: 160%;
+}
+
+/* Faq */
+
+.faq input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tabs{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px -2px rgb(0, 0, 0,.5);
+}
+.tab{
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+.tab-label{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #999;
+    font-weight: bold;
+    cursor: pointer;              /*Mostrar a mão de link*/
+    border-bottom: 1px solid #fff;
+}
+.tab-label:hover{
+    background: #777;
+}
+.tab-label::after{
+    content: "\002B"; /*sinal de mais*/
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all .5s;
+}
+.tab-content{
+    max-height: 0;
+    padding: 0 1em;
+    color: #000;
+    background: #fff;
+    transition: all .5s;
+}
+input:checked + .tab-label:after{
+    content: "\2212";
+}
+input:checked ~ .tab-content{
+    max-height: 100vh;
+    padding: 1em;
+}
+.close{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    background: #999;
+}
+.close:hover{
+    background: #777;
+    border-radius: 5px;
+}
+.faq label{
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+}
+
+/* Portifólio */
+
+.galeria img{
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/* Foto Notícia */
+
+/* .fotonoticia{
+    width: 100%;
+} */
+
+/* formúlario login */
+
+.box{
+    padding: 20px;
+    width: 420px;
+    height: 300px;
+    margin: 20px auto;
+    background-color:  #999;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.campo1{
+    width: 400px;
+    margin: 10px 0;
+    padding: 8px 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* formúlario adm_noticia */
+
+.box1{
+    padding: 20px;
+    width: 420px;
+    height: 350px;
+    margin: 20px auto;
+    background-color:  #999;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.campo2{
+    width: 400px;
+    margin: 10px 0;
+    padding: 8px 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* formúlario adm_noticia */
+
+.box3{
+    padding: 20px;
+    width: 420px;
+    height: 350px;
+    margin: 20px auto;
+    background-color:  #999;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.campo3{
+    width: 400px;
+    margin: 10px 0;
+    padding: 8px 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* lista noticias index.php */
+
+.boxnoticias > h2{
+    margin-bottom: 15px;
+}
+.noticias{
+    list-style: none;
+    text-align: left;
+}
+
