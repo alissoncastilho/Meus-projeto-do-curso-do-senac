@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>   
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<title>My App</title>
+<!-- Path to Framework7 Library Bundle CSS -->
+<link rel="stylesheet" href="css/framework7.bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/framework7-icons.css"> 
+<!-- Path to your custom app styles-->
+
+</head>
+<body>
+<!-- App root element -->
+<div id="app">
+  <div class="view view-main">
+  <div data-name="home" class="page">
+
+  <div class="navbar theme-dark">
+<div class="navbar-bg"></div>
+  <div class="navbar-inner">
+    <div class="title">Calculo de imc </div>
+</div>
+</div>
+<!-- Adicionando conteudo a página -->
+    <div class="page-content">
+<div class="block">  
+  <div><h2> Descubra seu indice de massa comporal </h2></div>
+<div class="block-title text-center">  </div>
+<form class="list" id="my-form">
+<ul>
+<li>
+  <div class="item-content item-input">
+<div class="item-inner">
+  <div class="item-title item-label"> <i class="f7-icons login"> question_circle</i>Peso</div>
+<br>
+  <span class="badge color-green">kg</span>
+
+<div class="item-input-wrap">
+  <input type="number" id= "peso" data-mask="000.000" data-mask-reverse="true" placeholder=" 000,000">
+  </div>
+</div>
+  </div>
+</li>
+  <li>
+    <div class="item-content item-input">
+  <div class="item-inner">
+    <div class="item-title item-label"> <i class="f7-icons login"> question_circle</i> altura</div>
+    <br>
+    <span class="badge color-green">A</span>
+    
+    <div class="item-input-wrap">
+      <input type="number" id= "altura" data-mask="0.00" placeholder=" 0,00">
+    </div>
+  </div>
+</div>
+</li>
+</ul>
+
+</form>
+<button class="col button button-fill button-large bg-color-green" id="bt-calcular" > calcular</button> 
+<div class="col text-align-center">
+
+  <div class="block">
+<div class="gauge demo-gauge"></div>
+  <p class="title">
+<span class="men text-color green"></span>
+
+</p>
+</div>
+</div>
+
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/framework7.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+</body>
+</html>
