@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pets</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="topbar bg-dark">
+            <div class="container">
+                <div class="row text-white align-items-center py-2">
+
+                    <div class=" col-12 col-sm-8  text-sm-left text-center">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        (19)982557488 | 34542277
+                        <i class="fas fa-clock"></i>
+                        Aberto 24h Todos os Dias
+                    </div>
+
+                    <div class=" col-12 col-sm-4  text-sm-right text-center">
+                        <div class="icons d-inline-flex ">
+                            <a href=""> <i class="fab fa-facebook-square "></i> </a>
+                            <a href=""> <i class="fab fa-twitter-square"></i> </a>
+                            <a href=""> <i class="fab fa-youtube-square"></i> </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> <!------- Fim do topbar ------->
+
+        <nav class="navbar navbar-light bg-warning navbar-expand-md">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse " id="menu">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Planos</a>
+                        </li>
+
+                        <li class="nav-item dropd dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Blog</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item active">Novidade</a>
+                                <a href="blog.html" class="dropdown-item ">Cuidados</a>
+                                <a href="#" class="dropdown-item ">Adoção</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header> <!------ Fim do header ------->
+
+    <section class="banner container-fluid p-0 d-none d-sm-block">
+        
+        <div id="banner-home" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="2000">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/banner-1.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h1>texto</h1>
+                        <p>O espaço do banho e tosa</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/banner-2.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2> Titulo </h2>
+                        <p>O espaço do banho e tosa</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/banner-3.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Titulo</h3>
+                        <p> O espaço do banho e tosa</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#banner-home" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <a class="carousel-control-next" href="#banner-home" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="servicos bg-light pt-4 pb-2 text-center">
+        <div class="container">
+
+            <div class="my-0  ">
+                <span class="h5"> TUDO PARA SEU PET </span>
+                <p class="display-3">A saúde e o bem-estar</p>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="bg-servicos mb-5 mx-auto">
+                        <img class="w-100" src="images/bg-servicos.jpg" alt="imagen">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+
+                        <div class="col-sm-6 md-4">
+                            <div class="media">
+                                <span class="icon icon-primary"> 
+                                    <i class="fas fa-home fa-2x"> </i>
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="mb-3">Hotel de animais</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                     Quod nihil natus aut repellendus! Modi, quaerat minima sint dignissimos voluptate laboriosam
+                                     saepe quam repellendus doloribus in harum cumque atque voluptatum necessitatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 md-4">
+                            <div class="media">
+                                <span class="icon icon-primary"> 
+                                    <i class="fas fa-cut fa-2x"> </i>
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="mb-3"> banho e tosa</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        Quod nihil natus aut repellendus! Modi, quaerat minima sint dignissimos voluptate laboriosam
+                                        saepe quam repellendus doloribus in harum cumque atque voluptatum necessitatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 md-4">
+                            <div class="media">
+                                <span class="icon icon-primary"> 
+                                        <i class="fas fa-shield-alt fa-2x"> </i>
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="mb-3">Vacinação</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Quod nihil natus aut repellendus! Modi, quaerat minima sint dignissimos voluptate laboriosam
+                                    saepe quam repellendus doloribus in harum cumque atque voluptatum necessitatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 md-4">
+                            <div class="media">
+                                <span class="icon icon-primary"> 
+                                    <i class="fas fa-medkit fa-2x"> </i>
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="mb-3">Cuidados domésticos</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                     Quod nihil natus aut repellendus! Modi, quaerat minima sint dignissimos voluptate laboriosam
+                                     saepe quam repellendus doloribus in harum cumque atque voluptatum necessitatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 md-4">
+                            <div class="media">
+                                <span class="icon icon-primary"> 
+                                    <i class="fas fa-bone fa-2x"> </i>
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="mb-3">Alimentção saudavel</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Quod nihil natus aut repellendus! Modi, quaerat minima sint dignissimos voluptate laboriosam
+                                    saepe quam repellendus doloribus in harum cumque atque voluptatum necessitatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 md-4">
+                            <div class="media">
+                                <span class="icon icon-primary"> 
+                                    <i class="fas fa-paw fa-2x"> </i>
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="mb-3"> Adoção</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Quod nihil natus aut repellendus! Modi, quaerat minima sint dignissimos voluptate laboriosam
+                                    saepe quam repellendus doloribus in harum cumque atque voluptatum necessitatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-warning btn-lg mt-2 mb-4">
+                 Conheça nossos Planos
+            </a>
+        </div>
+    </section>
+
+    <!-------- iniciando blockquotes -------->
+
+    <section id="home-quote" class="p-md-4">
+        <blockquote class="blockquote text-center text-white p-3">
+            <p class="mb-0 display-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer text-warning">Alguém famoso na <cite title="Título da fonte">Título da fonte</cite></footer>
+          </blockquote>
+    </section>
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h5 d-block" >Ainda está com dúvidas?</span>
+            <span class="h3 text-black-50">Perguntas Frequentes</span>
+        </div>
+
+        <div class="row justify-content-center accordion" id="my-accordion">
+            <div class="col-6 ">
+
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-1" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        Grávidas podem ter contato com cães e gatos?
+                    </a>
+                    </h5>
+                </div>
+                <div id="pergunta-1" class="collapse show" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Geralmente eles pressentem a gravidez antes mesmo da pessoa saber que está grávida. 
+                        Para saber se as gestantes podem ter contato com cães e gatos, acompanhe as informações 
+                        abaixo: Para esclarecer suas dúvidas, a resposta é: as gestantes podem, sim, conviver harmoniosamente
+                        com seu cão ou gato.
+                    </div>
+                </div>
+                <!-- *************************************** -->
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                        <a  data-toggle="collapse" data-target="#pergunta-2" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-arrow-right"></i>
+                            Em que época do ano é melhor aplicar o antipulgas nos pets?
+                        </a>
+                    </h5>
+                </div>
+                <div id="pergunta-2" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Evitar infestações de carrapatos e pulgas em cães e gatos é uma preocupação constante de quem tem animais em casa.
+                        Além de desagradáveis, esses bichinhos podem transmitir doenças e representar um risco à saúde dos pets e de sua família.
+                        Por isso, é muito importante ficar atento ao primeiro sinal desses parasitas em seu animal e sua casa para eliminá-los
+                        o mais rápido possível.
+                    </div>
+                </div>
+                <!-- *************************************** -->
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                        <a  data-toggle="collapse" data-target="#pergunta-3" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-arrow-right"></i>
+                            O que são zoonoses?
+                         </a>
+                    </h5>
+                </div>
+                <div id="pergunta-3" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Zoonoses são doenças infecciosas capazes de ser naturalmente transmitidas entre animais e seres humanos. 
+                        Os agentes que desencadeiam essas afecções podem ser micro-organismos
+                        diversos, como bactérias, fungos, vírus, helmintos e rickettsias.
+                     </div>
+                </div>
+                <!-- *************************************** -->
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                        <a  data-toggle="collapse" data-target="#pergunta-4" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-arrow-right"></i>
+                            Queria saber o que é o “Bicho Geográfico”?
+                        </a>
+                    </h5>
+                </div>
+                <div id="pergunta-4" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        O bicho-geográfico, também chamado de larva migrans, é um verme que possui o corpo alongado, cilíndrico e afilado nas extremidades. 
+                        Esse verme parasita cães e gatos e os seus ovinhos são eliminados nas fezes desses animais.
+                    </div>
+                </div>
+                <!-- *************************************** -->
+                    <div class="dropdown-divider"></div>
+                    <div class="perguntas" id="headingOne">
+                        <h5 class="mb-0">
+                            <a  data-toggle="collapse" data-target="#pergunta-5" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-arrow-right"></i>
+                                Mosquitos podem transmitir doenças para os pets?
+                            </a>
+                            </h5>
+                    </div>
+                    <div id="pergunta-5" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                        <div class="card-body">
+                                A taxa de prevalência da dirofilariose canina é muito variável, mas é maior em áreas litorâneas tropicais.
+                                As pulgas e os carrapatos não são os únicos que podem causar incômodos e transmitir doenças aos pets.
+                                A doença é transmitida pela picada de mosquito, entre eles, o Aedes aegypti
+                        </div>
+                    </div>
+                <!-- *************************************** -->
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                        <a  data-toggle="collapse" data-target="#pergunta-6" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-arrow-right"></i>
+                            Pets castrados podem ficar mais calmos?
+                        </a>
+                    </h5>
+                </div>
+                <div id="pergunta-6" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Pets castrados podem ficar mais calmos? Sim, a tendência é que os cães e gatos fiquem menos agitados e mais quietos após a castração.
+                        as a verdade é que geralmente há redução de 60% em casos de agressões entre cães e gatos machos
+                        e redução de 50% em marcações com urina.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimento container-fluid bg-dark text-white py-3 mt-5">
+        <div class="mt-4 text-center">
+            <h5 class="d-block"> DOGA ALGO SOBRE SEU PET</h5>
+        </div>
+
+        <div class="row justify-content-center pt-4">
+
+            <div class="col-12 col-sm-8 p-0 text-center">
+
+                <div id="depoimentos" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#depoimentos" data-slide-to="0" class="active"></li>
+                        <li data-target="#depoimentos" data-slide-to="1"></li>
+                        <li data-target="#depoimentos" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <span class="lead text-warning d-block p-0">Fabia Dias</span>
+                            <img class="rounded-circle" src="images/Fabia.jpg" alt="Primeiro Slide">
+                            <p class="p-4">
+                                Meu Pet é minha vida, não sei viver sem eles. amo de paixão
+                            </p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <span class="lead text-warning d-block p-0">Juliana Sousa</span>
+                            <img class="rounded-circle" src="images/Juliana.jpg" alt="Segundo Slide">
+                            <p class="p-4">
+                                 Meu Pet é minha vida, é como filho pra min.
+                            </p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <span class="lead text-warning d-block p-0">Karla Pereira </span>
+                            <img class="rounded-circle" src="images/Karla.jpg" alt="Terceiro Slide">
+                            <p class="p-4">
+                                Meu Pet dá muito trabalho, mais amo muito ele.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-warning text-dark pt-4">
+        <div class="container py-4 justify-content-round">
+            <div class="row">
+
+                <div class="col-6 col-md-4">
+                    <h5 class="p-2">Sobre nós</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolore iste consequuntur obcaecati perferendis molestias nostrum
+                        suscipip esse eaque cupiditate perspiciatis? Saepe facere hic natus
+                        quas? Minima sunt molestias deserunt distinctio!
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h5 class="p-2">Páginas</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Plano</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h5 class="p-2">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li>contato@pets.com.br</li>
+                        <li>(19)98566-9866</li>
+                        <li> De seg. á Dom 24h</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h5 class="p-2">Redes Socias</h5>
+                    <div class="icons d-inline-flex">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-dark text-center py-3 text-white">
+            <span m-1 >&copy; PETS 2019 - Alguns Direitos reserva</span>
+        </div>
+    </footer>
+
+
+
+    
+
+
+
+    <!-- Impor Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

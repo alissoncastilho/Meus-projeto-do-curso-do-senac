@@ -1,0 +1,325 @@
+* {
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    font-family: Arial, Helvetica, verdana, sans-serif; 
+    color:#363636; 
+  /*color: rgba(25,25,112,0.5);
+    background-color: #223322;*/
+    background-image: url(fotos/logotop.jpg);
+    background-repeat:repeat-y,  /* repeat, repeat-x, repeat-y, no-repeat */
+
+}
+header{
+    width: 1000px;                      /* largura do site */
+    margin: 0 auto 0 auto;              /* centralizar */
+    height: 250px;                      /* altura */
+    display: flex;                      /* colocar lado a lado */
+    justify-content: space-between;     /* espaçamento entre... */
+    align-items: center;                /* alinhar verticalmente */
+}
+.logo{
+    font-size: 2em;
+    color:rgba(255, 255, 255, 0.212);
+}
+.redessociais{
+    font-size: 2em;
+    color:rgba(255, 255, 255, 0);    
+    background-color: rgba(255, 255, 255, 0.562);    /* branco com transparência */
+    padding: 20px 20px;
+    border-radius: 5px;
+   
+}
+.fa-facebook-square{
+    color:#35619e ;
+}
+.fa-twitter-square{
+    color: #35619e;
+}
+
+
+.fa-instagram{
+    color: #35619e;
+}
+.fa-accessible-icon
+{color:#35619e;}
+.fab:hover{
+    color:#fff;
+    
+}
+
+#menu{
+    width: 100%;
+    margin: 0px auto 0px; /*centralizar*/
+}
+ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background:#35619e;
+}
+ul li{
+    display: inline-flex ;
+    justify-content: center;
+    
+
+}
+ul li a{
+    color:ghostwhite;
+    text-decoration: none;
+    padding:15px;
+    display: block;
+} 
+.bars{
+    font-size: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    display: none;
+}
+ul li:hover{
+    background: #ccc;
+}
+/*sube menu*/
+ul ul{
+    position: absolute;
+    min-width: 220px;
+    background: #35619e;
+}
+ul ul li{
+    display:block;
+    background: rgba(204, 204, 204, 0.733);
+}
+ul li:hover ul{
+    display: block;
+}
+
+section{
+    display: grid;                  /* define o layout como grid */
+    grid-template-areas: "conteudo lateral" "rodape rodape";
+    grid-template-columns: 700px 300px;
+    justify-content: center;
+}
+aside{
+    grid-area: lateral;
+    background-color: #35619e;
+    margin: 40px 40px;
+    padding: 10px;
+}
+
+aside > p{
+    margin: 10px 0px;
+}
+footer{
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    height: 100px;
+    font-size: 0.8em;
+
+}
+
+/* Formatação do article */
+
+article{
+    grid-area: conteudo;
+    padding: 30px 30px 30px 30px;
+    background: #fff;
+}
+article > h1{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color:#35619e;
+    
+
+}
+article > p{
+    font-size: 20px;
+    text-align: justify;    /* texto justificado */
+    line-height: 150%;
+    margin: 20px 0px;
+    
+}
+
+.fotoD{ 
+    margin : 15px 0px 0px 10px;   
+float: right;
+}
+         
+.lateral{
+    color: #fff;
+     }
+     /*FAQ*/
+
+     .accordion {
+    
+        background-color: #eee;
+        background:#BEBEBE;
+        color:;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+        
+        
+      }
+      
+      .active, .accordion:hover {
+        background-color:#35619e; 
+      }
+      
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+/* GALERIA DE FOTOS*/
+      div.gallery {
+        background:#35619e;
+        color: #000;
+        margin: 10px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+      }
+      
+     
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      label
+{
+    width: 100px;
+    float: left;
+
+}
+#form1 p{
+line-height: 150%;
+}
+.campo{
+    width: 100%;
+    padding: 5px;
+background-color: #f8f8f8;
+border: 1px  solid#999;
+border-radius:5px 
+
+}
+.combo{
+    width: 412px;
+}
+.botao{
+    border-style: none;
+    background-color: #267bbb;
+    color: #fff;
+    border-radius:5px;
+    padding: 10px 30px; 
+}
+.botao:hover{
+    background-color: #0F33FF;
+}
+
+
+.tabela1{
+    width:100%;
+    border-collapse:separate;
+    background-color: #9c9797;
+}
+.tabela1 td{
+   background-color: #fff;
+   padding: 30px 10px;
+   text-align: center;
+
+}
+.tabela2{
+   width: 100%;
+   border-collapse: collapse; /* TIRAR O ESPAÇAMENTO ENTRE COLUNAS*/
+
+
+}
+.tabela2 th{
+  padding: 10px;
+  background-color: #35619e;
+  color:#fff; 
+}
+.tabela2 td{
+   padding: 10px;
+   text-align: center;
+}
+.tabela2 tr:nth-child(odd){ /* odd= impar, even = par   */
+   background-color: #9c9797;
+   
+/* responsivo */
+}
+@media screen and (max-width:1024px){
+    body{
+    
+        font-family: Arial, Helvetica, verdana, sans-serif; 
+        color:#363636; 
+     padding: 5;
+    
+    }
+    section{
+        display: grid;                  /* define o layout como grid */
+        grid-template-areas: "conteudo" "lateral" "rodape";
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+    article{
+        grid-area: conteudo;
+        padding:10;
+        background: rgb(245, 245, 245);
+    }
+    aside{
+        grid-area: lateral;
+        background-color: #35619e;
+        padding: 10px;
+        width: 50%;
+       
+    } 
+   
+     article iframe{
+        width: 100%;
+        height: 70vw;
+     }
+     #menu, header{
+        width: 100%;
+    }
+     .bars{
+     display: block;
+        background: #35619e;
+        
+     }
+ ul{
+     display: none;
+     position: static;
+  }
+ ul li{
+     display: block;
+ }
+ ul li:hover{
+     background:rgba(255, 250, 240, 0.589);
+ }
+ ul ul{
+     position:static;
+ }
+ .campo{ 
+   width:100%;
+  }
+}

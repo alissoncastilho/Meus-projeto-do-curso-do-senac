@@ -1,0 +1,1 @@
+$("nav .bars").click(function(){$("ul").slideToggle(),$("ul ul").css("display","none")}),$("ul li").click(function(){$(window).width()<=768&&($(this).siblings().find("ul").slideUp(),$(this).find("ul").slideToggle())}),$(window).resize(function(){$(window).width()<=768&&$("ul").removeAttr("style")});

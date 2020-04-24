@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.icons a {
+    color: white;
+    padding: 0 0.75em;
+}
+#menu .nav-item a{
+    padding: 1em;
+    font-weight: 600;
+}
+
+.bg-servicos{
+    width: 74%;
+    height: auto;
+}
+#home-quote{
+    background: linear-gradient(0deg, rgba(10,10,10,0.7),rgba(0,0,0,0.45)),url('images/bg-home.jpg') center center;
+    background-size: cover;
+}
+.perguntas{
+    color: #1a7382;
+    width: 100%;
+}
+.perguntas a{
+    font-size: 0.8em!important;
+    cursor: pointer;
+}
+.sidebar ol a{
+    color: black;
+}
