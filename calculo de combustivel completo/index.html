@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>   
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<title>My App</title>
+<!-- Path to Framework7 Library Bundle CSS -->
+<link rel="stylesheet" href="css/framework7.bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/framework7-icons.css"> 
+<!-- Path to your custom app styles-->
+
+</head>
+<body>
+<!-- App root element -->
+<div id="app">
+  <div class="view view-main">
+  <div data-name="home" class="page">
+
+  <div class="navbar theme-dark">
+<div class="navbar-bg"></div>
+  <div class="navbar-inner">
+    <div class="title"><i class="f7-icons login">rocket_fill</i> CALCULAR COMBUSTIVEL</div> 
+</div>
+</div>
+<!-- Adicionando conteudo a página -->
+    <div class="page-content">
+<div class="block">  
+<div class="block-title text-center">  </div>
+<form class="list" id="my-form">
+<ul>
+<li>
+  <div class="item-content item-input">
+<div class="item-inner">
+  <div class="item-title item-label"> <i class="f7-icons login"> money_rubl_circle_fill</i>Preço do Etanol:</div>
+<br>
+ 
+
+<div class="item-input-wrap">
+  <input type="number" id= "etanol" data-mask="0.000" placeholder=" R$0,000">
+  </div>
+</div>
+  </div>
+</li>
+  <li>
+    <div class="item-content item-input">
+  <div class="item-inner">
+    <div class="item-title item-label"> <i class="f7-icons login">money_rubl_circle_fill</i> Preço da Gasolina:</div>
+    <br>
+    
+    
+    <div class="item-input-wrap">
+      <input type="number" id= "gasolina" data-mask="0.000" placeholder=" R$0,000">
+    </div>
+  </div>
+</div>
+</li>
+</ul>
+
+</form>
+<div class="qual">
+<h4>Abasteça hoje com: <span class="mensagem"> </span></h4>
+<span class="porc small"></span>
+<button class="col button button-fill  button-large button-round bg-color-red " id="btn-calcular"> calcular</button>
+
+</div>
+  </div>
+  <div class="block">  
+    <div class="block-title text-center">  </div>
+    <form class="list" id="my-form">
+    <ul>
+    <li>
+      <div class="item-content item-input">
+    <div class="item-inner">
+      <div class="item-title item-label"> <i class="f7-icons login"> money_dollar_circle_fill </i>Dinheiro:</div>
+    <br>
+     
+    
+    <div class="item-input-wrap">
+      <input type="number" id= "dinheiro" data-mask="000.000" data-mask-reverse="true" placeholder=" R$0,000">
+      </div>
+    </div>
+      </div>
+    </li>
+      <li>
+        <div class="item-content item-input">
+      <div class="item-inner">
+        <div class="item-title item-label"> <i class="f7-icons login"> today_fill </i> Litros:</div>
+        <br>
+        
+        
+        <div class="item-input-wrap">
+          <input type="number" id= "litros" data-mask="000" placeholder=" ML`S">
+        </div>
+
+      </div>
+
+    </div>
+    </li>
+    
+    </ul>
+    <div class="col text-align-center"> <br>
+      <button class="col button button-fill  button-large button-round bg-color-red " id="btn-novo" >Novo calculo</button>
+      <label class="litros-visible">   por volta de: <span id="lb_litros"></span></label>
+      <span>  <span class="result"> </span></span>
+      <label class="dinheiro-visible"> valor a pagar R$ <span id="lb_dinheiro"></span></label>
+      
+      </div>
+      </form>
+   </div>
+   <div class="consumo">
+  
+    <span class="item-label"> Media de consumo do Veiculo</span>
+    <div class="list no">
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-input">
+            cidade: <input type="number" id="cidade" placeholder="KM">
+          </div>
+          <div class="item-input">
+            Pista:<input type="number" id="pista" placeholder="KM">
+          </div>
+        </li>
+      </ul>
+      <span class="m-cidade"></span>  <span class="m-pista"></span>
+    </div>
+    
+    </div> <!-- consumo fechamento -->
+    </div>
+</div>
+</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/framework7.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+</body>
+</html>

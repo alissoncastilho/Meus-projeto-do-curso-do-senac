@@ -1,0 +1,17 @@
+.f7-icons.login{
+    font-size:2rem;
+    color: rgba(245, 19, 19, 0.733);
+
+
+}
+
+.input-clear-button{
+    visibility:hidden!important;
+    }
+    .small{
+        font-size: 0.8em;
+    }
+.disabled,[disabled]{
+    opacity: 0.5;
+    pointer-events: none;
+}
