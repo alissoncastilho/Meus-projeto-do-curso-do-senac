@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>app dos correios</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    </head>
+    
+    <body>
+            <div class="container mt-3">
+              <div class="row">
+                  <div class="col-sm-4">
+                      <div class="alert alert-primary">
+                        Calculo de Frete
+                      </div>
+     <form name="form1" id= "form1" action="" method="post">
+         <input type="text" name="origem" class="form-control" placeholder="Cep de origem">
+         <input type="text" name="destino" class="form-control" placeholder="Cep de destino">
+         <input type="number" name="peso" class="form-control" placeholder="Peso" min="1" max="30">
+         <select name=" servico" class="form-control">
+             <option selected></option>
+             <option value="04014"> Sedex A vista</option>
+             <option value="04510"> Pac A vista</option>
+         </select>
+       <br>
+       <input type="button" id="calcular" value="calcular frete" class="btn btn-primary">
+       <br><br>
+       
+     </form>
+     <span id="resultado"></span>
+                  </div>
+              </div>
+
+            </div>
+        </body>
+        
+        
+        </html>
+    <!-- Impor Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="functions.js"></script>
+    </body>
+    </html>

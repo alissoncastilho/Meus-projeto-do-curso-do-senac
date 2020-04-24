@@ -1,0 +1,32 @@
+
+ Tipo de serviço Sedex 
+http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?StrRetorno=xml&nCdEmpresa=&sDsSenha=&nCdServico=04014&nVlPeso=2&sCepOrigem=13486746&sCepDestino=37950000&nCdFormato=1&nVlComprimento=25&nVlAltura=25&nVlLargura=25&sCdMaoPropria=N&nVlValorDeclarado=0&sCdAvisoRecebimento=N
+
+
+ Tipo de serviço pac 
+http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?StrRetorno=xml&nCdEmpresa=&sDsSenha=&nCdServico=04510&nVlPeso=2&sCepOrigem=13486746&sCepDestino=37950000&nCdFormato=1&nVlComprimento=25&nVlAltura=25&nVlLargura=25&sCdMaoPropria=N&nVlValorDeclarado=0&sCdAvisoRecebimento=N
+
+
+ESTRUTURA DO CODIGO XML DOS CORREIOS 
+
+<Servicos>
+<cServico>
+<Codigo>04014</Codigo>
+<Valor>30,30</Valor>
+<PrazoEntrega>7</PrazoEntrega>
+<ValorSemAdicionais>30,30</ValorSemAdicionais>
+<ValorMaoPropria>0,00</ValorMaoPropria>
+<ValorAvisoRecebimento>0,00</ValorAvisoRecebimento>
+<ValorValorDeclarado>0,00</ValorValorDeclarado>
+<EntregaDomiciliar>S</EntregaDomiciliar>
+<EntregaSabado>N</EntregaSabado>
+<obsFim/>
+<Erro>0</Erro>
+<MsgErro/>
+</cServico>
+</Servicos>
+
+site de Gif 
+
+https://giphy.com/
+
